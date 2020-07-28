@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -11,7 +13,6 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Bootstrap</title>
   </head>
@@ -183,5 +184,58 @@
         </div>
       </div>
     </section>
+    <!--      END SERVICES      -->
+    <!--      START LATEST WORKS -->
+    <section class="latest-works">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="about__title">Latest Works</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <button class="button" data-filter="all"'>ALL</button>
+            <button class="button" data-filter="web"'>WEB DESIGN</button>
+            <button class="button" data-filter="ui"'>UI/UX DESIGN</button>
+            <button class="button" data-filter="mackups"'>MOCKUPS</button>
+          </div>
+        </div>
+        <div class="row filter">
+          <div class="col-xl-4" data-filter="ui"><img src="/img/item1.png" alt="" /><div class="text">
+            <h5>Hand Watch</h5>
+            <p>UI/UX DESIGN</p>
+          </div></div>
+          <div class="col-xl-4" data-filter="web"><img src="/img/item2.png" alt="" /><div class="text">
+            <h5>One Day Pass</h5>
+            <p>WEB DESIGN</p>
+          </div></div>
+          <div class="col-xl-4" data-filter="web"><img src="/img/item3.png" alt="" /><div class="text">
+            <h5>Modal T-Shirt</h5>
+            <p>WEB DESIGN</p>
+          </div></div>
+          <div class="col-xl-4" data-filter="ui"><img src="/img/item4.png" alt="" /><div class="text">
+            <h5>Flask</h5>
+            <p>UI/UX DESIGN</p>
+          </div></div>
+          <div class="col-xl-4" data-filter="mackups"><img src="/img/item5.png" alt="" /><div class="text">
+            <h5>Eplemost</h5>
+            <p>MOCKUPS</p>
+          </div></div>
+          <div class="col-xl-4" data-filter="mackups"><img src="/img/item6.png" alt="" /><div class="text">
+            <h5>The Kitchens</h5>
+            <p>MOCKUPS</p>
+          </div></div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <button class="button" data-filter="all">VIEW ALL</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--      END LATEST WORKS     -->
   </body>
+  <script src="/js/app.js"></script>
 </html>
