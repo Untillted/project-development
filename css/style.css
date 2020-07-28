@@ -30,14 +30,18 @@ body {
     font-family: "Open sans Semibold";
     font-size: 20px;
     color: #212121;
+    transition: 0.5s;
+}
+.menu__item i {
+    vertical-align: middle;
+    transition: 0.3s;
 }
 .menu__item i:hover {
-    transition: all 0.3s;
     color: #00897b;
 }
 .menu__item a:hover {
-    border-bottom: 2px solid #00897b;
-    transition: all 0.2s;
+    padding: 5px;
+    outline: 3px solid #00897b;
     text-decoration: none;
     color: #00897b;
 }
@@ -241,4 +245,60 @@ div[data-filter]:hover .text {
     background: #00897b;
     color: #fff;
     border: 2px solid #00897b;
+}
+/*      TEAM         */
+.team {
+    text-align: center;
+    padding: 120px 0;
+}
+.team img {
+    max-width: 350px;
+}
+.team__icons {
+    display: flex;
+    justify-content: center;
+}
+.team__icons a i {
+    transition: 0.5s;
+}
+.team__icons i:nth-child(1) {
+    color: #f0f1f1;
+}
+.team__icons i:nth-child(2) {
+    color: #00897b;
+}
+.team__icons a:hover i:nth-child(1) {
+    color: #3949ab;
+}
+.team__icons a:hover i:nth-child(2) {
+    color: #fff;
+}
+.team h4 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+.team p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.team__member {
+    margin: 0 1px;
+}
+.dots__list {
+    margin-top: 56px;
+}
+.dots__list ul {
+    display: flex;
+}
+.dots__item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00897b;
+    margin: 0 4.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dots__item:hover {
+    background: #3949ab;
 }
