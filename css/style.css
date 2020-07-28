@@ -1,4 +1,7 @@
 @import "fonts.css";
+*:focus {
+    outline: none;
+}
 ul,
 li {
     display: block;
@@ -10,6 +13,7 @@ li {
 }
 body {
     font-family: "Open sans";
+    cursor: default;
 }
 
 .menu-bar {
@@ -138,14 +142,12 @@ body {
     padding-top: 120px;
     padding-bottom: 135px;
 }
-
 .latest-works .button:hover,
 .focused {
     color: #000;
     border: 2px solid #00897b;
     background: transparent;
 }
-
 .filter {
     padding: 100px 0;
 }
@@ -174,4 +176,69 @@ div[data-filter]:hover .text {
     top: 40%;
     text-align: center;
     cursor: default;
+}
+/*      PRICE        */
+.price {
+    text-align: center;
+    background: #f0f1f1;
+    padding: 125px 0;
+}
+.price__col {
+    background: #fff;
+    transition: 0.3s;
+}
+.price__col:hover {
+    box-shadow: 0 0 8px;
+}
+.price__head {
+    color: #fff;
+    font-size: 50px;
+    background-image: url(/img/pricing_bg.png);
+    padding-top: 40px;
+    padding-bottom: 65px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 209px;
+}
+.price__head p {
+    font-size: 25px;
+}
+.price__head sub {
+    vertical-align: middle;
+    font-size: 17px;
+    margin-left: 5px;
+}
+.price__head sup {
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 25px;
+}
+.price__body {
+    font-size: 17px;
+    color: #737373;
+}
+.price__body ul > li {
+    border-bottom: 1px solid #737373;
+    padding-bottom: 12px;
+    padding-top: 28px;
+    margin: 0 auto;
+    max-width: 178px;
+}
+.price__footer {
+    padding: 50px 0;
+    font-weight: 600px;
+}
+.price__footer button {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #212121;
+    border: 2px solid gray;
+    background: transparent;
+    padding: 13px 23px;
+    transition: 0.3s;
+}
+.price__col button:hover {
+    background: #00897b;
+    color: #fff;
+    border: 2px solid #00897b;
 }
