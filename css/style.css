@@ -281,9 +281,6 @@ div[data-filter]:hover .text {
     font-size: 15px;
     margin-bottom: 30px;
 }
-.team__member {
-    margin: 0 1px;
-}
 .dots__list {
     margin-top: 56px;
 }
@@ -301,4 +298,10 @@ div[data-filter]:hover .text {
 }
 .dots__item:hover {
     background: #3949ab;
+}
+.team .active {
+    display: block;
+}
+.team__member {
+    display: none;
 }
