@@ -305,3 +305,53 @@ div[data-filter]:hover .text {
 .team__member {
     display: none;
 }
+/*      BLOG         */
+.services img {
+    width: 98%;
+}
+.right div:first-child {
+    order: 2;
+}
+.right div:last-child {
+    order: 1;
+}
+.blog {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+.blog a {
+    color: #373b3a;
+    font-size: 25px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+.blog a:hover {
+    text-decoration: none;
+    color: #00897b;
+}
+.blog span {
+    margin-right: 39px;
+    font-size: 17px;
+    font-family: "Open sans semibold";
+}
+.blog i {
+    margin-right: 11px;
+}
+.blog div {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.blog p {
+    font-size: 15px;
+}
+.button_blog {
+    margin-top: 120px;
+    padding: 15px 41px;
+    font-size: 18px;
+}
+.button_blog:hover {
+    color: #212121;
+    border: 2px solid #00897b;
+    background: transparent;
+}
