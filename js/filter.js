@@ -5,9 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function filterImg(data) {
     imgWorks.forEach((img) => {
       if (img.dataset.filter == data || data == "all") {
-        img.classList.remove("d-none");
+        img.classList.add("works_active");
+        img.classList.remove("works_hidden");
       } else {
-        img.classList.add("d-none");
+        img.classList.add("works_hidden");
+        img.classList.remove("works_active");
       }
     });
   }
