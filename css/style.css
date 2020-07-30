@@ -1,4 +1,29 @@
 @import "fonts.css";
+.toTop {
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #00897b;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.toTop:hover {
+  color: #212121;
+  opacity: 1;
+}
+html {
+  scroll-behavior: smooth;
+}
 *:focus {
   outline: none;
 }
@@ -12,14 +37,19 @@ li {
   cursor: default;
 }
 body {
+  position: relative;
   font-family: "Open sans";
   cursor: default;
 }
-
 .menu-bar {
+  z-index: 3;
   padding: 20px 0;
   color: #212121;
   background: #fff;
+  overflow: hidden;
+}
+.menu-icon {
+  display: none;
 }
 
 .menu__item {
@@ -161,6 +191,9 @@ body {
 }
 .latest-works img {
   margin-bottom: 30px;
+}
+.filter {
+  overflow: hidden;
 }
 .works_active {
   opacity: 1;
@@ -423,4 +456,33 @@ textarea {
   font-weight: bold;
   text-align: center;
   padding: 13px 0;
+}
+@media screen and (max-width: 1024px) {
+  .menu {
+    position: absolute;
+    right: -20px;
+    top: -50px;
+  }
+  .menu li {
+    margin: 0 7px;
+  }
+  .menu li:last-child {
+    display: none;
+  }
+  .logo-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .menu-icon {
+    z-index: 3;
+    display: block;
+    background: #00897b;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+  } */
 }

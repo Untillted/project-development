@@ -17,12 +17,15 @@
     <title>Bootstrap</title>
   </head>
   <body>
+    <div ><a class="toTop" href="#home"><i class="fas fa-arrow-up"></a></i></div>
     <!-- START HEADER-MENU-->
+    <a name="home"></a>
     <header class="menu-bar">
       <div class="container">
         <div class="row">
-          <div class="col-xl-2">
+          <div class="col-xl-2 logo-bar">
             <img src="/img/logo.png" class="logo" />
+            <button class="menu-icon"><i class="fas fa-bars"></i></button>
           </div>
           <div class="col-xl-8 ml-auto align-self-center">
             <nav>
@@ -32,7 +35,7 @@
                 <li class="menu__item"><a href="#services">Servicing</a></li>
                 <li class="menu__item"><a href="#latest-works">Portfolio</a></li>
                 <li class="menu__item"><a href="#blog">Blog</a></li>
-                <li class="menu__item"><a href="#">Contact us</a></li>
+                <li class="menu__item"><a href="#contact">Contact us</a></li>
                 <li class="menu__item">
                   <i class="material-icons">search</i>
                 </li>
@@ -53,15 +56,15 @@
               Very suitable to support all web development projects
             </p>
             <button class="button">OUR SERVICES</button>
-            <button class="button">HIRE IS NOW</button>
+            <button class="button">HERE IS NOW</button>
           </div>
         </div>
       </div>
     </header>
     <!--        END MAIN-HEADER     -->
     <!--        ABOUT US            -->
-    <section class="about">
-      <a name="about">
+    <a name="about"></a>
+    <section class="about">     
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8">
@@ -103,8 +106,8 @@
     </section>
     <!--        END ABOUT-US        -->
     <!--        START SERVICES      -->
+    <a name="services"></a>
     <section class="services">
-      <a name="services">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-8">
@@ -188,8 +191,8 @@
     </section>
     <!--      END SERVICES      -->
     <!--      START LATEST WORKS -->
+    <a name="latest-works"></a>
     <section  class="latest-works">
-      <a name="latest-works">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-7">
@@ -206,7 +209,7 @@
           </div>
         </div>
         <div class="row filter">
-          <div class="col-xl-4 " data-filter="ui"><img src="/img/item1.png" alt="" /><div class="text">
+          <div class="col-xl-4" data-filter="ui"><img src="/img/item1.png" alt="" /><div class="text">
             <h5>Hand Watch</h5>
             <p>UI/UX DESIGN</p>
           </div></div>
@@ -564,7 +567,8 @@
       </div>
     </section>
     <!--      TEAM END       -->
-    <!--      START BLOG      -->
+    <!--      START BLOG      -->    
+    <a name="blog"></a>
     <section class="services">
       <div class="container">
         <div class="row justify-content-center">
@@ -644,13 +648,14 @@
         </div>
         <div class="row">
           <div class="col-xl-12">
-            <button class="button button_blog">MORE VIEV</button>
+            <button class="button button_blog">VIEW MORE</button>
           </div>
         </div>
       </div>
     </section>
     <!--      END BLOG       -->
-    <!--     START CONTACT US     -->
+    <!--     START CONTACT US     -->   
+    <a name="contact"></a>
     <footer class="footer">
       <div class="container">
         <div class="row justify-content-center">
@@ -701,8 +706,9 @@
     <!--     COPTRIGHT       -->
     <footer class="copyright">
         All rights Reserved © 2017
-      </footer>
+    </footer>
+    <script src="/js/filter.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
-  <script src="/js/filter.js"></script>
-  <script src="/js/slider.js"></script>
+  
 </html>
