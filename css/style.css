@@ -18,7 +18,7 @@
   opacity: 0.5;
 }
 .toTop:hover {
-  color: #212121;
+  color: #fff;
   opacity: 1;
 }
 html {
@@ -41,6 +41,7 @@ body {
   font-family: "Open sans";
   cursor: default;
 }
+/*      HEADER NAV       */
 .menu-bar {
   z-index: 3;
   padding: 20px 0;
@@ -51,7 +52,9 @@ body {
 .menu-icon {
   display: none;
 }
-
+.logo {
+  width: 60%;
+}
 .menu__item {
   margin-left: 37px;
   cursor: pointer;
@@ -119,6 +122,7 @@ body {
 .about__title {
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 26px;
 }
 .about__text {
   font-family: "open sans regular";
@@ -139,7 +143,7 @@ body {
 .services {
   text-align: center;
   background: #e4fdf9;
-  padding-top: 165px;
+  padding-top: 125px;
   padding-bottom: 125px;
 }
 .our_card {
@@ -190,6 +194,7 @@ body {
   box-shadow: 0 0 10px #000;
 }
 .latest-works img {
+  max-width: 100%;
   margin-bottom: 30px;
 }
 .filter {
@@ -231,6 +236,7 @@ div[data-filter]:hover .text {
 }
 .price__col {
   background: #fff;
+  margin-bottom: 20px;
   transition: 0.3s;
 }
 .price__col:hover {
@@ -328,6 +334,8 @@ div[data-filter]:hover .text {
 }
 .dots__list ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .dots__item {
   width: 15px;
@@ -345,11 +353,13 @@ div[data-filter]:hover .text {
   display: block;
 }
 .team__member {
+  margin-bottom: 15px;
   display: none;
 }
 /*      BLOG         */
 .services img {
-  width: 98%;
+  width: 100%;
+  margin-bottom: 25px;
 }
 .right div:first-child {
   order: 2;
@@ -360,7 +370,7 @@ div[data-filter]:hover .text {
 .blog {
   text-align: left;
   margin-left: 25px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .blog a {
   color: #373b3a;
@@ -435,6 +445,9 @@ textarea {
   border: none;
   border-radius: 5px;
 }
+.form input {
+  margin-bottom: 10px;
+}
 .form textarea {
   font-family: "open sans semibold";
   margin: 33px 0;
@@ -457,11 +470,13 @@ textarea {
   text-align: center;
   padding: 13px 0;
 }
+/*      ADAPTIVE         */
 @media screen and (max-width: 1024px) {
   .menu {
-    position: absolute;
-    right: -20px;
-    top: -50px;
+    display: none;
+  }
+  .logo {
+    width: 40%;
   }
   .menu li {
     margin: 0 7px;
@@ -473,16 +488,77 @@ textarea {
     display: flex;
     justify-content: space-between;
   }
-  /* .menu-icon {
-    z-index: 3;
-    display: block;
-    background: #00897b;
-    font-size: 25px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    border-radius: 5px;
-  } */
+}
+@media screen and (max-width: 771px) {
+  .menu-bar nav {
+    display: none;
+  }
+  .logo-bar {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 30%;
+  }
+  .menu-bar nav {
+    display: none;
+  }
+  .header {
+    padding: 70px 0;
+  }
+  .header__title {
+    font-size: 35px;
+  }
+  .header__text {
+    padding-bottom: 40px;
+  }
+  .header button {
+    margin-bottom: 10px;
+  }
+  .about {
+    padding: 20px 0;
+  }
+  .about__text {
+    margin-bottom: 20px;
+  }
+  .services {
+    padding: 20px;
+  }
+  .latest-works {
+    padding: 20px;
+  }
+  .latest-works button {
+    margin-bottom: 10px;
+  }
+  .filter {
+    padding: 20px;
+  }
+  .filter img {
+    margin-bottom: 10px;
+  }
+  .price {
+    padding: 20px;
+  }
+  .team {
+    padding: 20px;
+  }
+  .team__member img {
+    width: 100%;
+  }
+  .right div:first-child {
+    order: 1;
+  }
+  .right div:last-child {
+    order: 2;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .blog span {
+    margin-right: 9px;
+  }
+  .button_blog {
+    margin-top: 20px;
+  }
 }
