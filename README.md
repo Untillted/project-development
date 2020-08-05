@@ -1,2 +1,2 @@
 # project-development
-Used Bootstrap,JS. Next time in plan add more JS animation
+Used Bootstrap,Adaptive,JS. Next time in plan add more JS animation
