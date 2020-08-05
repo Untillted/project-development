@@ -1,22 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const teams = document.querySelectorAll(".team__member"),
+  const slider = document.querySelector(".slider"),
+    slideElem = document.querySelectorAll(".slider-items"),
     dots = document.querySelectorAll(".dots__item");
 
-  let index = 0;
-  console.log();
-
-  function activeTeam(i) {
-    teams.forEach((team) => {
-      team.classList.remove("active");
-      teams[i].classList.add("active");
-      teams[i + 1].classList.add("active");
-      teams[i + 2].classList.add("active");
-    });
-  }
-
   dots.forEach((dot, i) => {
+    let size = slideElem[0].clientWidth * 3;
     dot.addEventListener("click", () => {
-      activeTeam(i);
+      slider.style.transform = `translateX(${-size * i}px)`;
     });
   });
 });

@@ -40,6 +40,7 @@ body {
   position: relative;
   font-family: "Open sans";
   cursor: default;
+  font-size: 16px;
 }
 /*      HEADER NAV       */
 .menu-bar {
@@ -73,8 +74,8 @@ body {
   color: #00897b;
 }
 .menu__item a:hover {
-  padding: 5px;
-  outline: 3px solid #00897b;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #00897b;
   text-decoration: none;
   color: #00897b;
 }
@@ -126,7 +127,7 @@ body {
 }
 .about__text {
   font-family: "open sans regular";
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 110px;
 }
 .about_text {
@@ -148,10 +149,11 @@ body {
 }
 .our_card {
   background: #fff;
-  padding: 50px 45px 40px;
+  padding: 50px 15px 40px;
   transition: 0.5s;
   border-radius: 5px;
   margin-bottom: 30px;
+  height: 90%;
 }
 .our_card:hover {
   color: #fff;
@@ -217,7 +219,6 @@ div[data-filter] img {
 }
 div[data-filter]:hover img {
   filter: brightness(50%);
-  transition: 0.5s;
 }
 div[data-filter]:hover .text {
   display: block;
@@ -281,7 +282,7 @@ div[data-filter]:hover .text {
   font-weight: 600px;
 }
 .price__footer button {
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #212121;
   border: 2px solid gray;
@@ -295,12 +296,25 @@ div[data-filter]:hover .text {
   border: 2px solid #00897b;
 }
 /*      TEAM         */
+
 .team {
   text-align: center;
   padding: 120px 0;
 }
+.team .slider {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: 0.3s;
+  justify-content: left;
+}
+.team__member {
+  padding: 0;
+  margin-bottom: 15px;
+}
 .team img {
-  max-width: 350px;
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
 }
 .team__icons {
   display: flex;
@@ -352,10 +366,6 @@ div[data-filter]:hover .text {
 .team .active {
   display: block;
 }
-.team__member {
-  margin-bottom: 15px;
-  display: none;
-}
 /*      BLOG         */
 .services img {
   width: 100%;
@@ -395,7 +405,7 @@ div[data-filter]:hover .text {
   margin-bottom: 25px;
 }
 .blog p {
-  font-size: 15px;
+  font-size: 17px;
 }
 .button_blog {
   margin-top: 120px;
@@ -490,11 +500,28 @@ textarea {
   }
 }
 @media screen and (max-width: 771px) {
+  .logo {
+    width: 20%;
+  }
+  .blog {
+    margin: 15px 0 0 0;
+    text-align: center;
+  }
+  .blog__img {
+    display: none;
+  }
+  .button_blog {
+    margin-top: 20px;
+  }
   .menu-bar nav {
     display: none;
   }
   .logo-bar {
     justify-content: center;
+  }
+  .slider-items {
+    flex: 0 0 50%;
+    padding: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -560,5 +587,9 @@ textarea {
   }
   .button_blog {
     margin-top: 20px;
+  }
+  .slider-items {
+    flex: 0 0 100%;
+    padding: 0;
   }
 }
