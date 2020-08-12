@@ -88,7 +88,7 @@ body {
   padding: 180px 0;
   background-size: cover;
   background-position: 0 100%;
-  background-image: url(/img/header.png);
+  background-image: url(img/header.png);
 }
 .header__title {
   font-size: 60px;
@@ -246,7 +246,7 @@ div[data-filter]:hover .text {
 .price__head {
   color: #fff;
   font-size: 50px;
-  background-image: url(/img/pricing_bg.png);
+  background-image: url(img/pricing_bg.png);
   padding-top: 40px;
   padding-bottom: 65px;
   background-size: cover;
@@ -422,7 +422,7 @@ div[data-filter]:hover .text {
   text-align: center;
   padding: 111px 0;
   color: #fff;
-  background: url(/img/footer.png) 0 20% / cover;
+  background: url(img/footer.png) 0 20% / cover;
 }
 .fa-map-marker-alt,
 .fa-phone-alt,
